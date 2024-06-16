@@ -6,7 +6,7 @@
 
 Dự án này liên quan đến việc xử lý dữ liệu hoạt động của sinh viên sử dụng Apache Kafka, Hadoop, Nifi và Spark. Dữ liệu được đọc từ một tệp CSV, gửi đến một chủ đề Kafka, lưu trữ trong Hadoop Distributed File System (HDFS) và xử lý bằng Spark.
 
-## III. Đẩy dữ liệu vào Kafka Topic
+## I. Đẩy dữ liệu vào Kafka Topic
 
 ### Tạo topic vdt2024
 
@@ -18,13 +18,13 @@ Truy cập vào Kafka UI tại `localhost:8080` và tạo topic với tên `vdt2
 
 Chạy lệnh trên terminal: `python Producer.py`
 
-## IV. Triển khai Hadoop
+## II. Triển khai Hadoop
 
 Truy cập `localhost:9870` và tạo đường dẫn chứa dữ liệu action log : `/raw_zone/fact/activity`
 
 Lưu file `danh_sach_sv_de.csv` vào HDFS bằng cách tạo đường dẫn `/raw_zone/fact/ds_de_vdt` và sử dụng PySpark code để sao chép file vào HDFS.
 
-## V. Cấu hình và triển khai Nifi 
+## III. Cấu hình và triển khai Nifi 
 
 Truy cập vào giao diện quản lý của NiFi (`http://localhost:8091`).
 
@@ -34,7 +34,7 @@ Lưu dữ liệu parquet xuống HDFS bằng cách tạo processor với type l�
 
 Kích hoạt các tiến trình và kiểm tra xem dữ liệu đã được xử lý và lưu trữ đúng cách trên HDFS chưa.
 
-## VI. Triển khai Spark 
+## IV. Triển khai Spark 
 
 Thông tin về xử lý chi tiết trong file `spark_processing_vdt2024.py`
 

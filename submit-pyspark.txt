@@ -1,0 +1,4 @@
+./bin/spark-submit \
+--master spark://spark-master:7077 \
+/vdt-assigment-2024/spark_processing_vdt2024.py \
+

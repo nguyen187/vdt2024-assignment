@@ -1,4 +1,7 @@
 # VDT 2024 - Assignment
+file spark_processing_vdt2024.py dùng để chạy spark xử lý dữ liệu
+file Producer.py dùng để gửi data lên kafka
+
 
 <!-- > Required: Máy cần cài đặt sẵn Docker. Cấu hình máy cần RAM >= 8GB. Môi trường thử nghiệm: Window 11
 
